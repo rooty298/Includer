@@ -1,13 +1,9 @@
-# Includer 
-# Laboratorio LFI con Docker
+# Includer
+Laboratorio LFI con Docker
 
-## Contruir imagen Docker
+## Clonar el repositorio, construir y ejecutar
 ```bash
-sudo docker build -t includer .
-```
-## Ejecutar Contenedor
-```bash
-sudo docker -d -p 8080:80 -p 2222:22 includer
-```
-## Comprobar
-Visitar: http://localhost:8080/
+git clone https://github.com/rooty298/Includer.git
+cd Includer
+docker build -t includer .
+docker run -p 8080:80 -p 2222:22 includer
