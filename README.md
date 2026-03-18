@@ -6,7 +6,7 @@ Laboratorio LFI con Docker
 git clone https://github.com/rooty298/Includer.git
 cd Includer
 docker build -t includer .
-docker run -p 8080:80 -p 2222:22 includer
+docker run -d -p 8080:80 -p 2222:22 includer
 ```
 # Probar
 ```bash
